@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotpassActivity"
+    android:background="@drawable/card_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_back"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:elevation="20dp">
+        <ImageView
+            android:id="@+id/image_log"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_email"
+            android:layout_gravity="center"
+            android:tint="@color/colorApp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Please enter the following detail"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/forgem"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email id"
+            android:drawableStart="@drawable/ic_email"
+            android:background="@drawable/edt_back"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:padding="10dp"
+            android:drawablePadding="5dp"
+            android:textColorHint="#000000"
+            android:inputType="textEmailAddress"
+            android:textColor="#FA8936"/>
+
+        <Button
+            android:id="@+id/forg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableEnd="@drawable/ic_chevron_right"
+            android:background="@drawable/btn_back"
+            android:textColor="#ffffff"
+            android:drawablePadding="7dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="OTP will be sent to the following email"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000000"/>
+</LinearLayout>
+
+</LinearLayout>

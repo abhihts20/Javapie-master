@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.miniproject.javapie.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_upcoming"
+        android:name="com.miniproject.javapie.ui.upcoming_activity.UpcomingActivityFragment"
+        android:label="@string/menu_upcoming"
+        tools:layout="@layout/fragment_upcoming" />
+
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.miniproject.javapie.ui.previous_activity.PreviousActivityFragment"
+        android:label="@string/menu_today"
+        tools:layout="@layout/fragment_today" />
+
+    <fragment
+        android:id="@+id/nav_previous"
+        android:name="com.miniproject.javapie.ui.registered_events.RegisteredEventsFragment"
+        android:label="@string/menu_previous"
+        tools:layout="@layout/fragment_previous" />
+
+    <fragment
+        android:id="@+id/nav_registerfor"
+        android:name="com.miniproject.javapie.ui.registered_events.RegisteredEventsFragment"
+        android:label="@string/menu_register_for"
+        tools:layout="@layout/fragment_registerfor" />
+</navigation>
